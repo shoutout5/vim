@@ -3,11 +3,11 @@ syntax on
 set ruler
 set hidden "allow opening files in another buffer w/o saving the current buffer
 set nocompatible
+filetype off
 
 set bs=2        " allow backspacing over everything in insert mode
 set viminfo='20,\"50 " store 50 lines for each register, marks for last 20 files
 set shiftwidth=4
-set background=light
 
 "Search options
 set hlsearch
@@ -34,3 +34,16 @@ autocmd BufRead * set formatoptions=tcql nocindent comments&
 autocmd BufRead *.c,*.h set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
 set cindent
 
+"Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"Bundles
+Bundle 'bhilburn/kernel-coding-style'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
+
+"Color
+set background=dark
+colorscheme solarized
