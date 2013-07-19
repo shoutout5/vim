@@ -43,6 +43,7 @@ Bundle 'gmarik/vundle'
 Bundle 'bhilburn/kernel-coding-style'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
+Bundle 'vim-scripts/LustyJuggler'
 
 "Color
 set background=dark
